@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sku_variants",
+  "info": {
+    "displayName": "variants"
+  },
+  "options": {},
+  "attributes": {
+    "sku": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "stock": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "min": 0
+    },
+    "optionValues": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}
